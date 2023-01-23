@@ -5,7 +5,6 @@ alert("Welcome to my website!");
 let favColor = prompt("What is your favorite color?");
 alert("Great, I like " + favColor + " too!");
 
-
 //exercise 3 part 1
 
 let moviePricePerDay = prompt("How many does it cost to rent a movie per day?");
@@ -93,7 +92,5 @@ else
 {
     alert("Product offer does not apply.");
 }
-
-
 
 
