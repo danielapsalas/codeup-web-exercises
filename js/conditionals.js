@@ -128,6 +128,24 @@ alert("This is the color you picked: "  + colorPicked + "\n" + analyzeColor(colo
  * return value.
  */
 
+function calculateTotal(luckyNumber, totalAmount){
+   if(luckyNumber === 0) {
+       return ("No discount.");
+   }else if(luckyNumber === 1) {
+       return (totalAmount - (totalAmount * .10));
+   }else if(luckyNumber === 2) {
+       return (totalAmount - (totalAmount * .25));
+   }else if(luckyNumber === 3) {
+       return (totalAmount - (totalAmount * .35));
+   }else if(luckyNumber === 4) {
+       return (totalAmount - (totalAmount * .50));
+   }else if(luckyNumber === 5) {
+       return ("You get the item for free");
+   }else {
+       return ("No discount");
+   }
+}
+
 
 /**
  * TODO:
@@ -137,8 +155,13 @@ alert("This is the color you picked: "  + colorPicked + "\n" + analyzeColor(colo
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+//Generate a random number between 0 and 6
+var luckyNumber = Math.floor(Math.random() * 6);
+
+var totalOfBill = prompt("What is your bill total?");
+alert("Your lucky number was: " + luckyNumber + "\n" +
+    "Your price before dicount was: " + totalOfBill + "\n" +
+    "Your price after discount is: " + calculateTotal(luckyNumber, totalOfBill));
 
 
 /**
@@ -159,3 +182,38 @@ alert("This is the color you picked: "  + colorPicked + "\n" + analyzeColor(colo
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+function isItEvenorOdd(num) {
+    parseInt(num);
+    if(num % 2 === 0) {
+        return "Number is even.";
+    }else{
+        return "Number is odd.";
+    }
+}
+function numberPlus100(num){
+    return parseInt(num) + 100;
+}
+function isPositiveorNegative(num) {
+    parseInt(num);
+    if (num > 0) {
+        return "Number is positive.";
+    } else if (num < 0) {
+        return "Number is negative.";
+    }
+}
+var result = confirm("Do you want to pick a number");
+
+if(result === true){
+    var numberUserChoose = prompt("Enter a number: ");
+    alert(isItEvenorOdd(numberUserChoose));
+    alert(numberPlus100(numberUserChoose));
+    alert(isPositiveorNegative(numberUserChoose));
+}else{
+    var pickNumber = prompt("Please try again and enter a number: ");
+    alert(isItEvenorOdd(pickNumber));
+    alert(numberPlus100(pickNumber));
+    alert(isPositiveorNegative(pickNumber));
+}
+
+
+
