@@ -23,7 +23,7 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-/*function analyzeColor(colorString){
+function analyzeColor(colorString){
     if(colorString === "red") {
         return colorString + " is the color of apples.";
     }else if(colorString === "orange"){
@@ -42,9 +42,9 @@
 }
 
 
-var usersColor = prompt("Type in a cool color.");
-alert("You typed in " + usersColor + " . A cool fact about that color is that " +  analyzeColor(usersColor));
-*/
+//var usersColor = prompt("Type in a cool color.");
+//alert("You typed in " + usersColor + " . A cool fact about that color is that " +  analyzeColor(usersColor));
+
 
 
 // Don't change the next two lines!
@@ -68,31 +68,33 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-var pickColor = prompt("What is your favorite color?");
+//var pickColor = prompt("What is your favorite color?");
 
-switch (pickColor) {
-    case "red":
-        alert(pickColor + " is the color of apples.");
-        break;
-    case "orange":
-        alert(pickColor + " is color of the fruit orange.");
-        break;
-    case "yellow":
-        alert(pickColor + " is the color of lemons.");
-        break;
-    case "green":
-        alert(pickColor + " is the color of peppers.");
-        break;
-    case "blue":
-        alert(pickColor + " is the color of blueberries.");
-        break;
-    case "purple":
-        alert(pickColor + " is the color of grapes.");
-        break;
-    default:
-        alert("I don't know anything about that color");
-        break;
+function switchColorFunction (color) {
+    switch (pickColor) {
+        case "red":
+            alert(pickColor + " is the color of apples.");
+            break;
+        case "orange":
+            alert(pickColor + " is color of the fruit orange.");
+            break;
+        case "yellow":
+            alert(pickColor + " is the color of lemons.");
+            break;
+        case "green":
+            alert(pickColor + " is the color of peppers.");
+            break;
+        case "blue":
+            alert(pickColor + " is the color of blueberries.");
+            break;
+        case "purple":
+            alert(pickColor + " is the color of grapes.");
+            break;
+        default:
+            alert("I don't know anything about that color");
+            break;
 
+    }
 }
 /**
  * TODO:
@@ -102,7 +104,8 @@ switch (pickColor) {
  */
 
 
-/* ########################################################################## */
+var colorPicked = prompt("What is your favorite color?");
+alert("This is the color you picked: "  + colorPicked + "\n" + analyzeColor(colorPicked));
 
 
 /**
