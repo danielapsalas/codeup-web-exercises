@@ -23,18 +23,18 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColor(colorString){
-    if(colorString === "Red") {
+/*function analyzeColor(colorString){
+    if(colorString === "red") {
         return colorString + " is the color of apples.";
-    }else if(colorString === "Orange"){
+    }else if(colorString === "orange"){
         return colorString + " is color of the fruit orange.";
-    }else if(colorString === "Yellow"){
+    }else if(colorString === "yellow"){
         return colorString + " is the color of lemons.";
-    }else if(colorString === "Green"){
+    }else if(colorString === "green"){
         return colorString + " is the color of peppers.";
-    }else if(colorString === "Blue"){
+    }else if(colorString === "blue"){
         return colorString + " is the color of blueberries.";
-    }else if(colorString === "Purple"){
+    }else if(colorString === "purple"){
         return colorString + " is the color of grapes.";
     }else{
         return "I don't know anything about " + colorString;
@@ -44,6 +44,7 @@ function analyzeColor(colorString){
 
 var usersColor = prompt("Type in a cool color.");
 alert("You typed in " + usersColor + " . A cool fact about that color is that " +  analyzeColor(usersColor));
+*/
 
 
 // Don't change the next two lines!
@@ -51,6 +52,7 @@ alert("You typed in " + usersColor + " . A cool fact about that color is that " 
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
+/*
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
@@ -58,16 +60,40 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-var usingRandomColor = analyzeColor(randomColor);
-console.log(usingRandomColor);
+//var usingRandomColor = analyzeColor(randomColor);
+//console.log(usingRandomColor);
+
+
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-//switch () {
+var pickColor = prompt("What is your favorite color?");
 
+switch (pickColor) {
+    case "red":
+        alert(pickColor + " is the color of apples.");
+        break;
+    case "orange":
+        alert(pickColor + " is color of the fruit orange.");
+        break;
+    case "yellow":
+        alert(pickColor + " is the color of lemons.");
+        break;
+    case "green":
+        alert(pickColor + " is the color of peppers.");
+        break;
+    case "blue":
+        alert(pickColor + " is the color of blueberries.");
+        break;
+    case "purple":
+        alert(pickColor + " is the color of grapes.");
+        break;
+    default:
+        alert("I don't know anything about that color");
+        break;
 
-//}
+}
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
