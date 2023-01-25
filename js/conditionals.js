@@ -160,7 +160,7 @@ var luckyNumber = Math.floor(Math.random() * 6);
 
 var totalOfBill = prompt("What is your bill total?");
 alert("Your lucky number was: " + luckyNumber + "\n" +
-    "Your price before dicount was: " + totalOfBill + "\n" +
+    "Your price before discount was: " + totalOfBill + "\n" +
     "Your price after discount is: " + calculateTotal(luckyNumber, totalOfBill));
 
 
