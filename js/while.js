@@ -1,5 +1,6 @@
 "use strict";
-/* expected output
+/* While loop question.
+expected output:
 2
 4
 8
@@ -17,11 +18,11 @@
 32768
 65536
  */
-var x = 2;
-while(x <= 65536){
-   console.log(x);
-   x *= 2;
-}
+// var x = 2;
+// while(x <= 65536){
+//    console.log(x);
+//    x *= 2;
+// }
 
 
 /*
@@ -36,24 +37,24 @@ the random numbers for this exercise.
  */
 
 // This is how you get a random number between 50 and 100
-var allCones = Math.floor(Math.random() * 100) + 50;
+var allCones = Math.floor(Math.random() * 50) + 50;
 
 do{
    console.log("number of cones left to sell: " + allCones);
 
    // This expression will generate a random number between 1 and 5
-   var conesSold =  Math.floor(Math.random() * 5) + 1;
+   var conesSold =  Math.floor((Math.random() * 5) + 1);
 
-   if(conesSold === allCones){
-      console.log("Yay! I sold them all!");
-   }else if(conesSold < allCones){
+   var conesMinus = allCones - conesSold;
+
+  if(conesSold  < allCones){
       console.log(conesSold + " cones sold...");
+      allCones -= conesSold;
    }else if(conesSold > allCones){
-      console.log("Cannot sell you " + conesSold + " cones I only have " + allCones);
+      console.log("Cannot sell you " + conesSold + " cones. I only have " + allCones);
    }else{
-      console.log("problem");
+      console.log("Yay! I sold them all!");
+      allCones -= conesSold;
    }
 
-   ++allCones;
-
-}while(allCones !== 0);
+}while(allCones > 0);

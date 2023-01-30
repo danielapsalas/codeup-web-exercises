@@ -17,9 +17,20 @@ function isItEven(num){
 }
 
 for (var i = 0; i < 10; i++){
-    var randomNumber = Math.random() * (200 -20) + 20;
+    var randomNumber = Math.floor((Math.random() * 180) * 20);
     console.log((parseInt(randomNumber)) + " is " + isItEven(parseInt(randomNumber)));
 }
+
+// another way for number 3
+// for (var i = 0; i < 10; i++){
+//     var randomNumber = Math.floor((Math.random() * 180) * 20);
+//
+//     if(num % 2 === 0){
+//         console.log(randomNumber + " is even".)
+//     }else{
+//         console.log(randomNumber + " is odd");
+//     }
+// }
 
 //number 4 of loop exercises
 var treeSize = prompt("How many rows do you want your tree to be?");
@@ -32,7 +43,21 @@ function halfTree(x) {
     }
 }
 
+//other way to do number 4
+// for(var i = 1; i <= 9;i++){
+//     var string = "";
+//     for(var n = 1;n <= i; n++){
+//         string += i;
+//     }
+//     console.log(string);
+// }
+
+//other way to do number 4
+// for( var i =1 i<= 9; i++){
+//     console.log(i.toString().repeat());
+// }
+
+//number 5 of for loop exer
 for(var x = 100; x >= 5; x--){
     if (parseInt(x) % 5 == 0) console.log(x);
 }
-
