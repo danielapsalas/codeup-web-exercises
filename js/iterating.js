@@ -1,3 +1,16 @@
+function first(x){
+    return console.log(x[0]);
+}
+
+function second(x){
+    return console.log(x[1]);
+}
+
+function last(x){
+    var elementLast = x[x.length - 1];
+    return console.log(elementLast);
+}
+
 (function(){
     "use strict";
 
@@ -64,18 +77,6 @@
 
     console.log("--------------");
     var numbers = ([1, 2, 3, 4, 5]);
-    function first(x){
-        return console.log(x[0]);
-    }
-
-    function second(x){
-        return console.log(x[1]);
-    }
-
-    function last(x){
-        var elementLast = x[x.length - 1];
-        return console.log(elementLast);
-    }
 
     first(numbers)
     second(numbers);
