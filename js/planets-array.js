@@ -27,12 +27,11 @@
     console.log(planets);
 
     console.log('Removing "The Sun" from the beginning of the planets array.');
-    var arr = [1, 2, 3, 4];
-    var removedElement = planets.shift();
+    planets.shift();
     console.log(planets);
 
     console.log('Removing "Pluto" from the end of the planets array.');
-    var removedItem = planets.pop();
+    planets.pop();
     console.log(planets);
 
     console.log('Finding and logging the index of "Earth" in the planets array.');
