@@ -168,22 +168,26 @@
      *   `showBookInfo` function.
      */
 
-    function createBook(title, author){
-        var books = [
-            {
-                title: title,
-                author: author
-            }
-        ];
-
-        return book;
-    }
-    var newBook = createBook("Dani's cool book", "Dani Salas");
-    console.log(newBook);
-
-    // function showBookInfo(books){
-    //     return console.log("Book # " + (books.indexOf(books) + 1)+ "\nTitle: " + books.title + "\nAuthor: " + books.author.firstName + " " + books.author.lastName);
+    // function createBook(title, first, last){
+    //    return{
+    //        title: title,
+    //        author: {
+    //            firstName: first,
+    //            lastName: last
+    //        }
+    //    }
     // }
-    // var funcBookInfo = showBookInfo(books[1]);
-    // console.log(funcBookInfo);
+    // var title1 = prompt("Enter title: ");
+    // var firstName1 = prompt("Enter author first name: ");
+    // var lastName1 = prompt("Enter author last name: ");
+    // console.log(createBook(title1, firstName1, lastName1));
+    //
+    // var newBook = createBook("Dani's cool book", "Dani", "Salas");
+    // console.log(newBook);
+    //
+    // var bookTwo = [
+    //     createBook("Pride and Prejudice", "Jane", "austen"),
+    // ];
+    //
+    // booksTwo.forEach(function
 })();
