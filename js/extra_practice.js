@@ -161,26 +161,32 @@
 //     - CD if marks is greater than 40 and less than or equal to 50.
 //     - DD if marks is greater than 30 and less than or equal to 40.
 //     - FF if marks is less than or equal to 30.
+//
+// var userGrade = prompt("Enter your grade in integer form: ");
+// function checkGrade(grade){
+//     if(grade > 90){
+//         alert("Grade is: AA");
+//     }else if(grade > 80 && grade <= 90){
+//         alert("Grade is: AB");
+//     }else if(grade > 70 && grade <= 80){
+//         alert("Grade is: BB");
+//     }else if(grade > 60 && grade <= 70){
+//         alert("Grade is: BC");
+//     }else if(grade > 50 && grade <= 60){
+//         alert("Grade is: CC");
+//     }else if(grade > 40 && grade <= 50){
+//         alert("Grade is: CD");
+//     }else if(grade > 30 && grade <= 40){
+//         alert("Grade is: DD");
+//     }else if(grade <= 30){
+//         alert("Grade is: CC");
+//     }
+// }
+//
+// checkGrade(userGrade);
 
-var userGrade = prompt("Enter your grade in integer form: ");
-function checkGrade(grade){
-    if(grade > 90){
-        alert("Grade is: AA");
-    }else if(grade > 80 && grade <= 90){
-        alert("Grade is: AB");
-    }else if(grade > 70 && grade <= 80){
-        alert("Grade is: BB");
-    }else if(grade > 60 && grade <= 70){
-        alert("Grade is: BC");
-    }else if(grade > 50 && grade <= 60){
-        alert("Grade is: CC");
-    }else if(grade > 40 && grade <= 50){
-        alert("Grade is: CD");
-    }else if(grade > 30 && grade <= 40){
-        alert("Grade is: DD");
-    }else if(grade <= 30){
-        alert("Grade is: CC");
-    }
-}
-
-checkGrade(userGrade);
+//Reverse Input
+// function reversingInput(input){
+//     input = input + "";
+//     return input.split("").reverse().join("");
+// }
