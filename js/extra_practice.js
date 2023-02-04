@@ -185,8 +185,22 @@
 //
 // checkGrade(userGrade);
 
+
+
 //Reverse Input
 // function reversingInput(input){
 //     input = input + "";
 //     return input.split("").reverse().join("");
 // }
+
+
+
+//Write a JavaScript function that accepts a string as
+//a parameter and converts the first letter of each word
+// of the string in upper case
+
+function upperString(string){
+    var string2 = string.charAt(0).toUpperCase();
+    console.log(string2 + string.slice(1));
+
+}
