@@ -18,6 +18,8 @@
 //
 // }
 
+
+
 // Define a function named convertDaystoHours that takes in one input Days. Return the conversion of the number of days into total hours. If the input is not numeric or a numeric string, convertDaystoHours, should return false.
 // convertDaystoHours(0) //0
 // convertDaystoHours('5') // 120
@@ -57,6 +59,8 @@
 //     }
 // }
 
+
+
 //ONLINE Practice from https://www.teaching-materials.org/javascript/exercises/ifelse
 // Write a function named greaterNum that:
 //     takes 2 arguments, both numbers.
@@ -72,6 +76,9 @@
 // }
 //
 // console.log(greaterNum(5, 10));
+
+
+
 // Write a function named helloWorld that:
 //     takes 1 argument, a language code (e.g. "es", "de", "en")
 //     returns "Hello, World" for the given language, for atleast
@@ -91,6 +98,8 @@
 // console.log(helloWorld('de'));
 // console.log(helloWorld('es'));
 
+
+
 //Correct this code
 // function colorMessage(favoriteColor, shirtColor) {
 //     if (favoriteColor === shirtColor) {
@@ -109,31 +118,69 @@
 // }
 // console.log(colorMessage("black", "white"));
 
+
+
 // Write a JavaScript conditional statement to find the largest of five numbers.
 // Display an alert box to show the result.
 // Sample numbers : -5, -2, -6, 0, -1
 // Output : 0
+//
+// var num1 = prompt("Enter 1st number: ");
+// var num2 = prompt("Enter 2nd number: ");
+// var num3 = prompt("Enter 3rd number: ");
+// var num4 = prompt("Enter 4th number: ");
+// var num5 = prompt("Enter 5th number: ");
+//
+// function largestOf5(num1, num2, num3, num4, num5){
+//     if(num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5){
+//         alert("The largest num is: " + num1);
+//     }else if(num2 > num1 && num2 > num3 && num2 > num4 && num2 > num5){
+//         alert("The largest num is: " + num2);
+//     }else if(num3 > num1 && num3 > num2 && num3 > num4 && num3 > num5){
+//         alert("The largest num is: " + num3);
+//     }else if(num4 > num1 && num4 > num2 && num4 > num3 && num4 > num5){
+//         alert("The largest num is: " + num4);
+//     }else if(num5 > num1 && num5 > num2 && num5 > num3 && num5 > num4){
+//         alert("The largest num is: " + num5);
+//     }else{
+//         alert("ERROR");
+//     }
+// }
+//
+// alert(largestOf5(num1, num2, num3, num4, num5));
 
-var num1 = prompt("Enter 1st number: ");
-var num2 = prompt("Enter 2nd number: ");
-var num3 = prompt("Enter 3rd number: ");
-var num4 = prompt("Enter 4th number: ");
-var num5 = prompt("Enter 5th number: ");
 
-function largestOf5(num1, num2, num3, num4, num5){
-    if(num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5){
-        alert("The largest num is: " + num1);
-    }else if(num2 > num1 && num2 > num3 && num2 > num4 && num2 > num5){
-        alert("The largest num is: " + num2);
-    }else if(num3 > num1 && num3 > num2 && num3 > num4 && num3 > num5){
-        alert("The largest num is: " + num3);
-    }else if(num4 > num1 && num4 > num2 && num4 > num3 && num4 > num5){
-        alert("The largest num is: " + num4);
-    }else if(num5 > num1 && num5 > num2 && num5 > num3 && num5 > num4){
-        alert("The largest num is: " + num5);
-    }else{
-        alert("ERROR");
+
+// You are given a variable marks. Your task is to print:
+//
+//     - AA if marks is greater than 90.
+//     - AB if marks is greater than 80 and less than or equal to 90.
+//     - BB if marks is greater than 70 and less than or equal to 80.
+//     - BC if marks is greater than 60 and less than or equal to 70.
+//     -CC if marks is greater than 50 and less than or equal to 60.
+//     - CD if marks is greater than 40 and less than or equal to 50.
+//     - DD if marks is greater than 30 and less than or equal to 40.
+//     - FF if marks is less than or equal to 30.
+
+var userGrade = prompt("Enter your grade in integer form: ");
+function checkGrade(grade){
+    if(grade > 90){
+        alert("Grade is: AA");
+    }else if(grade > 80 && grade <= 90){
+        alert("Grade is: AB");
+    }else if(grade > 70 && grade <= 80){
+        alert("Grade is: BB");
+    }else if(grade > 60 && grade <= 70){
+        alert("Grade is: BC");
+    }else if(grade > 50 && grade <= 60){
+        alert("Grade is: CC");
+    }else if(grade > 40 && grade <= 50){
+        alert("Grade is: CD");
+    }else if(grade > 30 && grade <= 40){
+        alert("Grade is: DD");
+    }else if(grade <= 30){
+        alert("Grade is: CC");
     }
 }
 
-alert(largestOf5(num1, num2, num3, num4, num5));
+checkGrade(userGrade);
