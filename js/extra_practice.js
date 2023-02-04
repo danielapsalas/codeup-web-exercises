@@ -56,3 +56,19 @@
 //         return false;
 //     }
 // }
+
+//ONLINE Practice from https://www.teaching-materials.org/javascript/exercises/ifelse
+// Write a function named greaterNum that:
+//     takes 2 arguments, both numbers.
+//     returns whichever number is the greater (higher) number.
+// Checked: Function works
+
+function greaterNum(num1, num2){
+    if(num1 > num2){
+        return num1;
+    }else{
+        return num2;
+    }
+}
+
+console.log(greaterNum(5, 10));
