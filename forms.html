@@ -5,8 +5,7 @@
     <title>Register With US</title>
 </head>
 <body>
-<form method="POST" action="https://requestinspector.com/inspect/01grpdw5n9f3b6pem9pc8pn2dc
-">
+<form method="POST" action="https://requestinspector.com/inspect/01grpqa986rwbgaecnjjx80jww">
     <label for="email">Enter your email:</label>
     <input id="email" name="email" type="email">
     <br>
@@ -20,15 +19,19 @@
               rows="5" cols="33"></textarea>
     <br>
 
-    <p>How did you hear about us?:</p>
-    <form>
-        <input type="radio" id="billboard" name="how_did_you_hr_abt_us" value="billboard">
-        <label for="billboard">Billboard</label><br>
-        <input type="radio" id="radio_advertisement" name="how_did_you_hr_abt_us" value="radio_advertisement">
-        <label for="radio_advertisement">Radio Advertisement</label><br>
-        <input type="radio" id="internet_advertisement" name="how_did_you_hr_abt_us" value="internet_advertisement">
-        <label for="internet_advertisement">Internet Advertisement</label>
-    </form>
+    <h2>How did you hear about us?:</h2>
+    <label for="billboard">
+        billboard <input id="billboard" type="checkbox" name="how_did_you" value="billboard">
+    </label>
+    <label for="radio advertisement">
+        radio advertisement <input id="radio advertisement" type="checkbox" name="how_did_you" value="radio advertisement">
+    </label>
+    <label for="internet advertisement">
+        internet advertisement <input id="internet advertisement" type="checkbox" name="how_did_you" value="internet advertisement">
+    </label>
+    <label for="other">
+        Other <input id="other" type="checkbox" name="how_did_you" value="other">
+    </label>
     <br>
 
     <p>What web browser are you using?:</p>
@@ -37,8 +40,9 @@
         <option value="yahoo">yahoo</option>
         <option value="firefox">firefox</option>
     </select>
+    <br>
 
-
+    <input type="submit" value="Submit">
 </form>
 </body>
 </html>
