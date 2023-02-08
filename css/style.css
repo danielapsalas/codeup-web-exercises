@@ -22,3 +22,8 @@
     list-style-type: square;
     color:deeppink;
 }
+
+font * {
+    font-family: Serif, sans-serif;
+}
+
