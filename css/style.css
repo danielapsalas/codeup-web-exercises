@@ -7,13 +7,18 @@
     text-decoration: underline #0643dc;
 }
 
-body{
-    background-color: lightpink;
-}
+/*.background-img{*/
+/*    background-image: url(images_for_html/grey_background.jpeg);*/
+/*}*/
 
-.fancy-header {
-    font-family: Chalkboard;
-    text-align: center;
-    color: #3c3b42; /* single line comment */
-    text-decoration: underline;
+/*.fancy-header {*/
+/*    font-family: Chalkboard;*/
+/*    text-align: center;*/
+/*    color: #3c3b42; !* single line comment *!*/
+/*    text-decoration: underline;*/
+/*}*/
+
+.bullet{
+    list-style-type: square;
+    color:deeppink;
 }
