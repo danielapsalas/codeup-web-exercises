@@ -4,6 +4,7 @@ body{
 }
 
 .fancy-header {
+    font-family: Chalkboard;
     text-align: center;
     color: mediumpurple; /* single line comment */
     text-decoration: underline;

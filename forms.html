@@ -5,20 +5,28 @@
     <title>Register With US</title>
 </head>
 <body>
+<h1>Register With US</h1>
+
 <form method="POST" action="https://requestinspector.com/inspect/01grpqa986rwbgaecnjjx80jww">
-    <label for="email">Enter your email:</label>
-    <input id="email" name="email" type="email">
+
+    <label for="email">Email:</label>
+    <input id="email" name="email" type="email" placeholder="enter your email">
+    <br>
     <br>
 
     <label for="password">Password</label>
-    <input id="password" name="password" type="password">
+    <input id="password" name="password" type="password" placeholder="enter your password">
+    <br>
     <br>
 
     <label for="bio">bio:</label>
     <textarea id="bio" name="nio"
-              rows="5" cols="33"></textarea>
+              placeholder="Enter your biography"
+    ></textarea>
+    <br>
     <br>
 
+    //multiple answers click
     <h2>How did you hear about us?:</h2>
     <label for="billboard">
         billboard <input id="billboard" type="checkbox" name="how_did_you" value="billboard">
@@ -33,16 +41,30 @@
         Other <input id="other" type="checkbox" name="how_did_you" value="other">
     </label>
     <br>
+    <br>
+
+    //normal radio buttons
+    <h3>HOw did you hear about us?</h3>
+    <label><input type="radio" name="source" value="billboard">billboard<br></label>
+    <label><input type="radio" name="source" value="radio advertisement">radio advertisement<br></label>
+    <label><input type="radio" name="source" value="internet advertisement">internet advertisement<br></label>
+    <label><input type="radio" name="source" value="other">other<br>
+    </label>
+    <br>
+    <br>
 
     <p>What web browser are you using?:</p>
-    <select name="coffee_preference">
+    <select name="browser">
         <option value="google">google</option>
         <option value="yahoo">yahoo</option>
         <option value="firefox">firefox</option>
     </select>
     <br>
+    <br>
 
     <input type="submit" value="Submit">
+    <br>
+    <br>
 </form>
 </body>
 </html>
