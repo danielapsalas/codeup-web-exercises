@@ -3,19 +3,21 @@
     margin: 50px auto;
     width: 500px;
     padding: 10px;
+    color:red;
 }
 
 /*  selector for all "h1" elements
     that are a descendent of id="container"
     and have a class of "fancy-header" */
 #container h1.fancy-header{
-    color: blue;
+    color: deeppink;
     text-decoration: underline;
 }
 
 /* selector for all "em" elements */
-em {
+*em {
     font-weight: bold;
+    color: peru;
 }
 
 /* selector for all elements with class="article" */
@@ -27,4 +29,6 @@ em {
     that are a direct child of an element with class="article" */
 .article>a {
     float:right;
+    color: rgb(242, 244, 248);
 }
+
