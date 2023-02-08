@@ -34,3 +34,7 @@ table, td, tr{
     padding-right: 40px;
     font: small-caption;
 }
+
+a:link {
+    color:orange;
+}
