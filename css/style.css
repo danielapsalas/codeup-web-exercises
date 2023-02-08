@@ -38,3 +38,8 @@ table, td, tr{
 a:link {
     color:orange;
 }
+
+a:visited {
+    color:blue;
+}
+
