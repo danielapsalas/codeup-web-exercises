@@ -7,4 +7,13 @@
     text-decoration: underline #0643dc;
 }
 
+body{
+    background-color: lightpink;
+}
 
+.fancy-header {
+    font-family: Chalkboard;
+    text-align: center;
+    color: #3c3b42; /* single line comment */
+    text-decoration: underline;
+}
