@@ -4,35 +4,34 @@
 
 
 .header {
-    text-decoration: underline #0643dc;
+    text-decoration: underline #d641ff;
 }
 
 /*.background-img{*/
 /*    background-image: url(images_for_html/grey_background.jpeg);*/
 /*}*/
 
-/*.fancy-header {*/
-/*    font-family: Chalkboard;*/
-/*    text-align: center;*/
-/*    color: #3c3b42; !* single line comment *!*/
-/*    text-decoration: underline;*/
-/*}*/
+.font-xxx-large{
+    font-size: xxx-large;
+}
+
+.font-xx-large{
+    font-size: xx-large;
+}
 
 .bullet{
     list-style-type: square;
     color:deeppink;
 }
 
-font * {
+body {
     font-family: Serif, sans-serif;
+    background-color: rgba(255, 182, 193, 0.45);
 }
 
 table, td, tr{
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 40px;
-    font: small-caption;
+    padding: 10px 40px 20px 30px;
+    color: darkolivegreen;
 }
 
 a:link {
