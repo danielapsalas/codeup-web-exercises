@@ -25,6 +25,7 @@ fieldset {
     /* It should have no border */
 
     /* Its background should be white */
+    background-color: white;
 }
 
 .width-80 {
