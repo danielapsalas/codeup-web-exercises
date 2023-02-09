@@ -12,3 +12,11 @@ body, html {
     color: blue;
     padding: 10px;
 }
+
+.message-success{
+    border-radius: 5px;
+    background: darkseagreen;
+    color: green;
+    padding: 10px;
+}
+
