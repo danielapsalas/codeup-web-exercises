@@ -1,0 +1,16 @@
+h2{
+    color:cornflowerblue;
+    text-decoration: underline;
+}
+
+body{
+    background-color: antiquewhite;
+    background-image: url("../photod/grey_backgroound.jpeg");
+    background-size: cover;
+}
+
+.fancy-header{
+    text-align: center;
+    color: rebeccapurple;
+    text-decoration: underline;
+}

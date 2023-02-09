@@ -7,9 +7,9 @@
     text-decoration: underline #d641ff;
 }
 
-/*.background-img{*/
-/*    background-image: url(images_for_html/grey_background.jpeg);*/
-/*}*/
+.background-img{
+    background-image: url("../photod/grey_backgroound.jpeg");
+}
 
 .font-xxx-large{
     font-size: xxx-large;
