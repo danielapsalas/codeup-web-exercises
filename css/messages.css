@@ -20,3 +20,10 @@ body, html {
     padding: 10px;
 }
 
+.message-warning{
+    border-radius: 5px;
+    background: #ffff99;
+    color: #999900;
+    padding: 10px;
+}
+
