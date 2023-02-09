@@ -1,0 +1,14 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+.message-info{
+    border-radius: 5px;
+    background: cornflowerblue;
+    color: blue;
+    padding: 10px;
+}
