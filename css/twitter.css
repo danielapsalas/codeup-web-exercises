@@ -71,10 +71,14 @@ a {
 .media{
     width:100%;
     background-color: white;
-    border-bottom: 1px;
+    border-bottom: 1px solid grey;
     padding: .5em;
     overflow: auto;
-
+}
+.media-image{
+    float: left;
+    max-width: 50px;
+    margin-top: 1.33em;
 }
 .btn {
     border: 1px solid var(--main-link-color);
