@@ -59,7 +59,10 @@ a {
 .profile-form{
     line-height: 80px;
 }
-
+.profile-details{
+    float:left;
+    width 25%;
+}
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);
