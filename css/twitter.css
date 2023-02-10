@@ -42,6 +42,7 @@ a {
     color: var(--main-link-color);
     font-weight: bold;
     text-decoration: none;
+    padding: 14px 16px;
 }
 .nav-link:hover {
     color: var(--link-color);
