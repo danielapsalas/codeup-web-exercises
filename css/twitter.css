@@ -59,13 +59,10 @@ a {
 .profile-form{
     line-height: 80px;
 }
-.profile-details{
+.profile-details, .timeline, .who-to-follow{
     float:left;
-    width: 25%;
-}
-.profile-form{
-    float: left;
-    width:50%;
+    width: calc(25% - 1em);
+    margin: 0.5em;
 }
 .btn {
     border: 1px solid var(--main-link-color);
