@@ -7,6 +7,7 @@
 }
 * {
     box-sizing: border-box;
+    padding: 0;
 }
 body, html {
     background-color: var(--main-bg);
@@ -62,7 +63,18 @@ a {
 .profile-details, .timeline, .who-to-follow{
     float:left;
     width: calc(25% - 1em);
-    margin: 0.5em;
+    margin:0.5em;
+}
+.container{
+
+}
+.media{
+    width:100%;
+    background-color: white;
+    border-bottom: 1px;
+    padding: .5em;
+    overflow: auto;
+
 }
 .btn {
     border: 1px solid var(--main-link-color);
