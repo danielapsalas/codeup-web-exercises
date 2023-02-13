@@ -45,7 +45,8 @@ section {
 section:nth-of-type(1) {
     height: 3em;
     background: lightgreen;
-    /* enter needed declarations here */
+    flex-direction: row;
+
 }
 section:nth-of-type(1) div:last-child {
     /* enter needed declarations here */
