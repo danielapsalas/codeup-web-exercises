@@ -95,7 +95,10 @@ section:nth-of-type(3) h3 {
 .large-brown-box {
     height: 5em;
     width: 5em;
-    background: brown;
+    background: #6e0b0b;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     /* enter needed declarations here */
 }
 
