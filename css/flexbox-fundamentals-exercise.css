@@ -118,6 +118,7 @@ section:nth-of-type(6) {
     height: 14em;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
     /* enter needed declarations here */
 }
 
