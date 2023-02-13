@@ -80,8 +80,7 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) h3 {
-    /* enter needed declarations here */
-
+    align-items: center;
 }
 
 .orange-circle {
