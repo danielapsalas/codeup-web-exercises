@@ -46,6 +46,8 @@ section:nth-of-type(1) {
     height: 3em;
     background: lightgreen;
     flex-direction: row;
+    justify-content: space-between;
+
 
 }
 section:nth-of-type(1) div:last-child {
