@@ -117,6 +117,7 @@ section:nth-of-type(6) {
     background: coral;
     height: 14em;
     flex-wrap: wrap;
+    align-items: center;
     /* enter needed declarations here */
 }
 
