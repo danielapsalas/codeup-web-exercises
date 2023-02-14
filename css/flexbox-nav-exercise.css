@@ -15,6 +15,14 @@ nav{
     display: flex;
 }
 
+nav a{
+    text-decoration: none;
+    color: black;
+    /*display: inline-block;*/
+    padding: 1em;
+}
+
+
 /*!*navbar color*!*/
 /*.OnlyNavBar{*/
 /*    background-color: #9b9b9b;*/
