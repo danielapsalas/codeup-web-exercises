@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+/*__________NavBar__________*/
+/*Container*/
+#OnlyNavBar{
+    background-color: aliceblue;
+    /*add flex*/
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+/*hover Effect*/
+nav a:hover{
+    background-color: orange;
+}
+nav a:nth-child(4){
+    margin-left: auto;
+}
+nav a:nth-child(5){
+    border: rgba(255, 182, 193, 0.45) solid;
+    /*add flex*/
+    display: flex;
+    float: left;
+}
+
