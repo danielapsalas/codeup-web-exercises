@@ -7,6 +7,10 @@
 nav a:hover{
     background-color: blue;
 }
+nav a{
+    display: inline-block;
+    padding: 1em;
+}
 /*!*navbar color*!*/
 /*.OnlyNavBar{*/
 /*    background-color: #9b9b9b;*/
