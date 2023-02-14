@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
 
 /*!*navbar color*!*/
 /*.OnlyNavBar{*/
