@@ -25,7 +25,9 @@ nav a{
 nav a:hover{
     background-color: blue;
 }
-
+nav h2{
+    margin: auto;
+}
 /*!*navbar color*!*/
 /*.OnlyNavBar{*/
 /*    background-color: #9b9b9b;*/
