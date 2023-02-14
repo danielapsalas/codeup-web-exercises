@@ -22,6 +22,9 @@ nav a{
     padding: 1em;
 }
 
+nav a:hover{
+    background-color: blue;
+}
 
 /*!*navbar color*!*/
 /*.OnlyNavBar{*/
