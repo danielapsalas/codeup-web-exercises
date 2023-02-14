@@ -1,40 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-html{
-    height: 100%;
-    width: 100%;
-}
-body{
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-}
 
-/*__________NavBar__________*/
-/*Container*/
-#OnlyNavBar{
-    background-color: aliceblue;
+/*navbar color*/
+.OnlyNavBar{
+    background-color: #9b9b9b;
     /*add flex*/
     display: flex;
 }
+/* text in <nav> <a>*/
 nav a{
     text-decoration: none;
-    color: black;
+    font-family: worksans, sans-serif;
+    font-weight: bolder;
+    color: #020002;
     padding: 1em;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 /*hover Effect*/
 nav a:hover{
-    background-color: orange;
-}
-nav a:nth-child(4){
-    margin-left: auto;
+    background-color: #0643dc;
 }
 nav a:nth-child(5){
-    border: rgba(255, 182, 193, 0.45) solid;
-    /*add flex*/
     display: flex;
-    float: left;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
