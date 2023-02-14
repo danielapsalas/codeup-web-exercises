@@ -1,32 +1,36 @@
-
-/*navbar color*/
-.OnlyNavBar{
-    background-color: #9b9b9b;
-    /*add flex*/
-    display: flex;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-/* text in <nav> <a>*/
-nav a{
-    text-decoration: none;
-    font-family: worksans, sans-serif;
-    font-weight: bolder;
-    color: #020002;
-    padding: 1em;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-/*hover Effect*/
-nav a:hover{
-    background-color: #0643dc;
-}
-nav a:nth-child(5){
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-}
+/*!*navbar color*!*/
+/*.OnlyNavBar{*/
+/*    background-color: #9b9b9b;*/
+/*    !*add flex*!*/
+/*    display: flex;*/
+/*}*/
+/*!* text in <nav> <a>*!*/
+/*nav a{*/
+/*    text-decoration: none;*/
+/*    font-family: worksans, sans-serif;*/
+/*    font-weight: bolder;*/
+/*    color: #020002;*/
+/*    padding: 1em;*/
+/*    flex-wrap: wrap;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    margin: auto;*/
+/*}*/
+/*!*hover Effect*!*/
+/*nav a:hover{*/
+/*    background-color: #0643dc;*/
+/*}*/
+/*nav a:nth-child(5){*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    width: 100%;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*}*/
 
 
