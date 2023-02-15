@@ -13,5 +13,12 @@ body {
     .alert-info{
         padding: 1em;
     }
-
+    .alert-info a {
+        padding: calc(8px + 1.5625vw);
+        border: .1em solid grey;
+        background-color: #a7def1;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
 }
