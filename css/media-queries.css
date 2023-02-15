@@ -30,4 +30,14 @@ body {
         font-size: xx-large;
     }
 
+    ul.nav-links li {
+        padding: calc(8px + 1.5625vw);
+        background-color: #bbbaba;
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin: 10px
+    }
+
+
 }
