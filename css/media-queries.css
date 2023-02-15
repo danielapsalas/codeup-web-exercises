@@ -10,9 +10,10 @@ body {
 
 
 @media screen and (max-width: 767px) {
-    .alert-info{
+    .alert-info {
         padding: 1em;
     }
+
     .alert-info a {
         padding: calc(8px + 1.5625vw);
         border: .1em solid grey;
@@ -21,4 +22,12 @@ body {
         display: flex;
         justify-content: center;
     }
+
+    h1 {
+        padding: calc(8px + 1.5625vw);
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+    }
+
 }
