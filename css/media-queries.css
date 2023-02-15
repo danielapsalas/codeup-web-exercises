@@ -68,6 +68,8 @@ body {
         padding-bottom: 15px;
     }
 
-
+    footer div#social-media-links {
+        border: #d641ff solid;
+    }
 
 }
