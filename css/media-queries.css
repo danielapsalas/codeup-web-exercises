@@ -50,6 +50,10 @@ body {
         padding-bottom: 14px;
     }
 
+    section.sub-section h2 {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
 
 
 }
