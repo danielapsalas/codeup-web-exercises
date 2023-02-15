@@ -54,7 +54,12 @@ body {
         padding-top: 14px;
         padding-bottom: 14px;
     }
+
     section#main.main p {
+        text-align: left;
+    }
+
+    section.sub-section p {
         text-align: left;
     }
 
