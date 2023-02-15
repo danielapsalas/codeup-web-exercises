@@ -45,6 +45,11 @@ body {
         padding-bottom: 14px;
     }
 
+    section#main.main h2 {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
 
 
 }
