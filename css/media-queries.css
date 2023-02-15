@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+
+@media screen and (max-width: 767px) {
+    .alert-info{
+        padding: 1em;
+    }
+
+}
