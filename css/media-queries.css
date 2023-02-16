@@ -142,5 +142,11 @@ body {
         float: right;
     }
 
+    footer p{
+        position: absolute;
+        bottom: 0;
+
+    }
+
 }
 
