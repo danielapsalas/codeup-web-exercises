@@ -11,12 +11,14 @@ body {
 
 @media screen and (max-width: 767px) {
     .alert-info {
+        border: #186e0b solid 10px;
         padding: 1em;
     }
 
     .alert-info a {
+        border: #0643dc solid 10px;
         padding: calc(8px + 1.5625vw);
-        border: .1em solid grey;
+        /*border: .1em solid grey;*/
         background-color: #a7def1;
         color: black;
         display: flex;
@@ -24,6 +26,7 @@ body {
     }
 
     h1 {
+        border: #6e0b0b solid 10px;
         padding: calc(8px + 1.5625vw);
         display: flex;
         justify-content: center;
@@ -31,35 +34,41 @@ body {
     }
 
     ul.nav-links li {
+        border: #d641ff solid 10px;
         padding: calc(8px + 1.5625vw);
         background-color: #bbbaba;
         color: black;
         display: flex;
         justify-content: center;
-        margin: 10px
+        margin: 10px;
     }
 
     div.header-img img {
+        border: #ffe275 solid 10px;
         width: 100%;
         height: auto;
         padding-bottom: 14px;
     }
 
     section#main.main h2 {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-
-    section.sub-section h2 {
+        border: #a875ff solid 10px;
         padding-top: 14px;
         padding-bottom: 14px;
     }
 
     section#main.main p {
+        border: #7bffd7 solid 10px;
         text-align: left;
     }
 
+    section.sub-section h2 {
+        border: rgba(13, 31, 98, 0.61) solid 10px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
     section.sub-section p {
+        border: rgba(122, 159, 76, 0.66) solid 10px;
         text-align: left;
     }
 
@@ -73,3 +82,12 @@ body {
     }
 
 }
+
+@media screen and (min-width: 767px){
+    .alert-info{
+        display: none;
+    }
+
+
+}
+
