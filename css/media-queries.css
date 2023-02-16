@@ -88,6 +88,16 @@ body {
         display: none;
     }
 
+    .alert-info a{
+        display: none;
+    }
+
+    h1{
+        float: left;
+        display: inline;
+    }
+
+
 
 }
 
