@@ -1,0 +1,17 @@
+.topname{
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+}
+
+.jobname{
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
+.description{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+
+}
