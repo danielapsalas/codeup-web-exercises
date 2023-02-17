@@ -15,5 +15,15 @@
     font-size: small;
     text-align: center;
     padding-bottom: 20px;
+}
 
+.contact-list li{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    list-style-type: none;
+    text-align: center;
+}
+
+.contact-list ul{
+    text-align: center;
 }
