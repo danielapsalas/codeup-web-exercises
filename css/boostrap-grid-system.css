@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .topname{
     padding-top: 20px;
     font-family: 'Poppins', sans-serif;
@@ -26,4 +29,9 @@
 
 .contact-list ul{
     text-align: center;
+}
+
+hr{
+    border: 5px solid green;
+
 }
