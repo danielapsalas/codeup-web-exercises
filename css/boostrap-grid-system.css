@@ -33,5 +33,19 @@
 
 hr{
     border: 5px solid green;
-
 }
+
+.alltitles{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    color: #008cdc;
+}
+.skillsandabil{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: small;
+    margin-left: 2px;
+}
+
