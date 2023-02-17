@@ -33,13 +33,12 @@
 
 hr{
     border: 5px solid green;
+
 }
 
-.alltitles{
+.bluetitle{
     font-family: 'Poppins', sans-serif;
     text-align: left;
-    font-size: medium;
-    font-weight: bold;
     color: #008cdc;
 }
 .skillsandabil{
