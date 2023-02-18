@@ -95,46 +95,51 @@
                             </ul>
                         </div>
                     <!-- card footer             -->
-                    <div class="card-footer d-flex justify-content-end">
-                        <button class="btn btn-primary">Next</button>
+                        <div class="card-footer d-flex justify-content-end">
+                            <button class="btn btn-primary">Next</button>
+                        </div>
                     </div>
             </div>
         </div>
-    </div>
 
         <!-- Cheese and Sause tab      -->
         <div class="tab-pane fade" id="sauce" role="tabpanel" aria-labelledby="sauce-tab">
             <div class="card">
-                <div class="card-header bg-primary text-white">
-                    Choose Cheese and Sauce
-                </div>
-
+                <div class="card-header bg-primary text-white">Choose Cheese and Sauce</div>
                 <div class="card-body">
                     <div class="card">
                         <div class="card-header">
-                            Cheese
+                                Cheese
+                        </div>
+                        <div class="card-body">
+                            <p>How Much?</p>
+                            <select name="cheese" id="cheese" class="form-control">
+                                <option value="light-cheese">Light</option>
+                                <option value="normal-cheese">Normal</option>
+                                <option value="extra-cheese">Extra</option>
+                                <option value="double-cheese">Double</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <label for="cheese">How much?</label>
-                        <select name="cheese" id="cheese" class="form-control">
-                            <option value="light-cheese">Light</option>
-                            <option value="normal-cheese">Normal</option>
-                            <option value="extra-cheese">Extra</option>
-                            <option value="double-cheese">Double</option>
-                        </select>
-                    </div>
-<!--                    <div class="card">-->
-<!--                        <div class="dropdown">-->
-<!--                            <button class="btn btn-secondary dropdown-toggle d-flex justify-content-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                                Normal-->
-<!--                            </button>-->
-<!--                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">-->
-<!--                                <li><a class="dropdown-item" href="#">Action</a></li>-->
-<!--                                <li><a class="dropdown-item" href="#">Another action</a></li>-->
-<!--                                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
+                    <div class="card">
+                        <div class="card-header">
+                            Sauce
+                        </div>
+                        <div class="card-body">
+                            <p>What Type?</p>
+                            <select name="sauce" id="saucee" class="form-control">
+                                <option value="tomato-sauce">Tomato</option>
+                                <option value="marinara-sauce">Marinara</option>
+                                <option value="bbq-sauce">BBQ</option>
+                                <option value="alfredo-sauce">Alfredo</option>
+                            </select>
+                            <p>How Much?</p>
+                            <select name="howmuch" id="howmuch" class="form-control">
+                                <option value="light-howmuch">Light</option>
+                                <option value="normal-howmuch">Normal</option>
+                                <option value="extra-howmuch">Extra</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
