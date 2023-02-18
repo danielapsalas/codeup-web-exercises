@@ -10,12 +10,7 @@
     display: flex;
     align-items: center;
 }
-#pizza-text h1{
-    background-size: cover;
-    width:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-    font-weight: bold;
-}
+
+/*header h1{*/
+/*    bg-light p-2 text-dark bg-opacity-75 d-flex justify-content-center*/
+/*}*/
