@@ -59,11 +59,48 @@
             <button class="nav-link" id="toppings-tab" data-bs-toggle="tab" data-bs-target="#toppings" type="button" role="tab" aria-controls="toppings" aria-selected="false"><span class="badge rounded-pill bg-secondary">3</span>Toppings</button>
         </li>
     </ul>
+
+    <!-- CARDS   -->
     <div class="tab-content" id="myTabContent">
         <!-- Size and Crust tab       -->
         <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">
-
+            <div class="card">
+                <!-- card header               -->
+                <div class="card-header bg-primary text-white">Choose Size and Crust</div>
+                    <!-- card body               -->
+                    <div class="card-body">
+                        <div class="card">
+                            <div class="card-header">
+                                Hand Tossed
+                            </div>
+                        </div>
+                        <!-- radio buttons               -->
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste</li>
+                                <li class="list-group-item"><label><input name="prefer" value="1" type="radio" class="userRatings"> Small (10")</label></li>
+                                <li class="list-group-item"><label><input name="prefer" value="1" type="radio" class="userRatings"> Medium (12")</label></li>
+                            </ul>
+                        </div>
+                        <!-- second card header               -->
+                        <div class="card">
+                            <div class="card-header">Crispy Thin</div>
+                        </div>
+                        <!-- radio buttons               -->
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste</li>
+                                <li class="list-group-item"><label><input name="prefer" value="1" type="radio" class="userRatings"> Medium (12")</label></li>
+                                <li class="list-group-item"><label><input name="prefer" value="1" type="radio" class="userRatings"> Large (14")</label></li>
+                            </ul>
+                        </div>
+                    <!-- card footer             -->
+                    <div class="card-footer d-flex justify-content-end">
+                        <button class="btn btn-primary">Next</button>
+                    </div>
+            </div>
         </div>
+    </div>
 
         <!-- Cheese and Sause tab      -->
         <div class="tab-pane fade" id="sauce" role="tabpanel" aria-labelledby="sauce-tab">
