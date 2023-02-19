@@ -1,16 +1,55 @@
-.pizzajumbo{
-    background-image: url(../images/pizza.png);
+.category-info {
+    text-align: center;
+    margin-bottom: 20px;
+    border: #d641ff solid 5px;
+
+}
+
+.image{
+    position:relative;
+    border: #f1bb17 solid 5px;
+}
+
+.image img{
     height: 346px;
     background-size: cover;
+    border: #0643dc solid 5px;
 }
+
+.image h1{
+    position:absolute;
+    width:100%;
+    line-height:200px;
+    margin:0;
+    color: black;
+    border: #6e0b0b solid 5px;
+
+}
+
+/*.pizzajumbo{*/
+/*    background-image: url(../images/pizza.png);*/
+/*    height: 346px;*/
+/*    background-size: cover;*/
+/*    border: #3B94D9 solid 5px;*/
+/*}*/
 /*h1{*/
 /*    text-align: center;*/
 /*}*/
-.p-2{
-    display: flex;
-    align-items: center;
-}
+/*.p-2{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
 
 /*header h1{*/
 /*    bg-light p-2 text-dark bg-opacity-75 d-flex justify-content-center*/
 /*}*/
+.textcolor{
+    color: black;
+}
+
+h1 {
+    background: #ffffff;
+    opacity: .6;
+    display: flex;
+    justify-content: center;
+}
