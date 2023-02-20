@@ -50,3 +50,13 @@ hr{
     padding-bottom: 10px;
 }
 
+/* .md < | Medium devices and down (tablets) less than 992px */
+@media (max-width: 991.98px) {
+
+}
+
+/*Medium devices and up (tablets) 768px and up */
+@media (min-width: 768px) {
+
+}
+
