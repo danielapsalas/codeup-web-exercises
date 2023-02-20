@@ -52,11 +52,15 @@ hr{
 
 /* .md < | Medium devices and down (tablets) less than 992px */
 @media (max-width: 991.98px) {
-
+    .hiddenmediumanddown{
+        visibility: hidden;
+    }
 }
 
-/*Medium devices and up (tablets) 768px and up */
-@media (min-width: 768px) {
-
+/*large devices and up (tablets) 768px and up */
+@media (min-width: 992px) {
+    .hiddenmediumandup{
+        visibility: hidden;
+    }
 }
 
