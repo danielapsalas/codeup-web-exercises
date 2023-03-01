@@ -78,9 +78,11 @@
 <!--          subParagraphs[0].innerText = "Misson Accomplished";-->
           //subParagraphs.innerHTML = "Misson Accomplished";
 
-          var changeSubPara = function(){
-            subParagraphs.innerHTML = "Misson Accomplished";
+          var subpara = function(){
+            subParagraphs[0].innerText = "Misson Accomplished";;
           }
+
+          document.getElementById("btn1").addEventListener("click", changeMainHeader)
 
       })();
   </script>
