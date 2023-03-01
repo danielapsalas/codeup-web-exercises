@@ -53,6 +53,21 @@
             subHeader.style.color = 'blue';
           }
 
+          // TODO: Uncomment the next line and get all list items
+          var listItems = document.getElementsByTagName("li");
+
+          // TODO: Set text color on every other list item to grey
+<!--          for(var i = 0; i < listItems.length; i+=2){-->
+<!--              listItems[i].style.color = "grey";-->
+<!--          }-->
+
+            var everyOtherLiItems = function(){
+               for(var i = 0; i < listItems.length; i+=2){
+                  listItems[i].style.color = "grey";
+               }
+          }
+
+
 
       })();
   </script>
