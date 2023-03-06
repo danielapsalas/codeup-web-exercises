@@ -9,13 +9,13 @@
 </head>
 <body>
 <div class="row">
-    <h1 class="d-flex justify-content-center">Example</h1>
+    <h1 class="d-flex justify-content-center" id="header-1">Example</h1>
         <div class="col">
-            <h3>NOTICE</h3>
+            <h3 id="header-3">NOTICE</h3>
             <p>This is jQuery, Html, and CSS practice.</p>
         </div>
     <div class="col">
-        <h2>List</h2>
+        <h2 id="header-2">List</h2>
         <ul>
             <li class="list-items">Random 1</li>
             <li class="list-items">Random 2</li>
@@ -26,9 +26,17 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script>
-    // $(function() {
-    //     alert( 'The DOM has finished loading!' );
-    // });
+    $(".list-items")
+        .css("color", "purple")
+
+    $("#header-1")
+        .css("color", "grey")
+
+    $("#header-2")
+        .css("color", "green")
+
+    $("#header-3")
+        .css("color", "blue")
 </script>
 </body>
 </html>
