@@ -2,10 +2,38 @@
 <html lang="en">
 <head>
   <title>Konami Code</title>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
-<h1>Konami Code</h1>
+<div class="row">
+  <h1 class="d-flex justify-content-center">Konami Code</h1>
+</div>
 
+<div class="row">
+  <div class="col gx-5">
+    Column
+  </div>
+  <div class="col gx-5">
+    <div class="card1" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col gx-5">
+    <div class="card2" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--jQuery-->
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script>
   "use strict";
@@ -16,9 +44,13 @@
   $(document).keyup(function(e){
     userInput += e.keyCode;
     if(konamiCode === userInput){
-      $("body").css("background-color", "green");
+      $(".card1").css("background-color", "green");
     }
   })
 </script>
+
+
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
