@@ -10,9 +10,15 @@
 <script>
   "use strict";
 
-  let konamiCode = '3838404037393739666513';
+  let konamiCode = "3838404037393739666513";
   let userInput = "";
 
+  $(document).keyup(function(e){
+    userInput += e.keyCode;
+    if(konamiCode === userInput){
+      $("body").css("background-color", "green");
+    }
+  })
 </script>
 </body>
 </html>
