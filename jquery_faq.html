@@ -15,7 +15,7 @@
 <body>
 <p>Star Wars facts:</p>
 
-<a href="#" id="highlight-important">Click to toggle the highlighting of important text.</a>
+<a href="#" id="toggle-info">Click to toggle the highlighting of important text.</a>
 <dl>
   <dt>Fact 1</dt>
   <dd class="toggle">Jar Jar Binks is the reason the Jedi were destroyed.</dd>
@@ -55,7 +55,7 @@
 
 <script>
 $(document).ready(function() {
-  $('#highlight-important').click(function(event) {
+  $('#toggle-info').click(function(event) {
     event.preventDefault();
     $('.toggle').toggleClass('invisiblee');
   });
