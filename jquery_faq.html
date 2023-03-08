@@ -6,40 +6,46 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+      .invisiblee{
+        visibility: hidden;
+      }
+    </style>
 </head>
 <body>
 <p>Star Wars facts:</p>
 
+<a href="#" id="highlight-important">Click to toggle the highlighting of important text.</a>
 <dl>
   <dt>Fact 1</dt>
-  <dd class="invisiblee">Jar Jar Binks is the reason the Jedi were destroyed.</dd>
+  <dd class="toggle">Jar Jar Binks is the reason the Jedi were destroyed.</dd>
 
   <dt>Fact 2</dt>
-  <dd class="invisiblee">Each lightsaber color has a meaning behind it.</dd>
+  <dd class="toggle">Each lightsaber color has a meaning behind it.</dd>
 
   <dt>Fact 3</dt>
-  <dd class="invisiblee">Grogu is 50 years old.</dd>
+  <dd class="toggle">Grogu is 50 years old.</dd>
 
   <dt>Fact 4</dt>
-  <dd class="invisiblee">Yoda's first name is Buffy.</dd>
+  <dd class="toggle">Yoda's first name is Buffy.</dd>
 
   <dt>Fact 5</dt>
-  <dd class="invisiblee">The emperor used to be a chimp</dd>
+  <dd class="toggle">The emperor used to be a chimp</dd>
 
   <dt>Fact 6</dt>
-  <dd class="invisiblee">Darth Vader's reveal waa kept from everyone.</dd>
+  <dd class="toggle">Darth Vader's reveal waa kept from everyone.</dd>
 
   <dt>Fact 7</dt>
-  <dd class="invisiblee">It took three hours to fild the opening crawl.</dd>
+  <dd class="toggle">It took three hours to fild the opening crawl.</dd>
 
   <dt>Fact 8</dt>
-  <dd class="invisiblee">George Lucas was fined 250,000  dollars for the opening crawl sequence.</dd>
+  <dd class="toggle">George Lucas was fined 250,000  dollars for the opening crawl sequence.</dd>
 
   <dt>Fact 9</dt>
-  <dd class="invisiblee">Yoda was going to be played by a monkey.</dd>
+  <dd class="toggle">Yoda was going to be played by a monkey.</dd>
 
   <dt>Fact 10</dt>
-  <dd class="invisiblee">Chewbacca almost wore pants.</dd>
+  <dd class="toggle">Chewbacca almost wore pants.</dd>
 </dl>
 
 <!--Jquery-->
@@ -48,7 +54,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 <script>
-$('.invisiblee').css('visibility', 'hidden');
+$(document).ready(function() {
+  $('#highlight-important').click(function(event) {
+    event.preventDefault();
+    $('.toggle').toggleClass('invisiblee');
+  });
+});
+
 </script>
 </body>
 </html>
