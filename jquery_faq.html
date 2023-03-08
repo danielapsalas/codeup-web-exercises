@@ -9,12 +9,18 @@
     <link rel="stylesheet" href="css/jquery_faq.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <style>
+        /*Atributes and CSS exercise*/
       .invisiblee{
         visibility: hidden;
+      }
+      /*Traverse exercise*/
+      .invisiblee{
+          visibility: hidden;
       }
     </style>
 </head>
 <body>
+<!--Attributes and CSS exercise-->
 <p>Star Wars facts:</p>
 
 <a href="#" id="toggle-info">Click to toggle the highlighting of important text.</a>
@@ -48,20 +54,57 @@
 
   <dt>Fact 10</dt>
   <dd class="toggle">Chewbacca almost wore pants.</dd>
+
+  <!--Traversing exercise-->
+  <hr>
+  <button type="button" id="button-info">Click Me!</button>
+  <h3 id="national-parks-heading">National Parks</h3>
+  <ul id="national-parks">
+     <li>Arches</li>
+     <li>Badlands</li>
+     <li>Carlsbad Caverns</li>
+     <li>Denali</li>
+     <li>Everglades</li>
+  </ul>
+  <h3>State Parks of Texas</h3>
+  <ul id="state-parks-texas">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li>Enchanted Rock</li>
+  </ul>
+  <h3>State Parks of Texas</h3>
+    <ul id="state-parks-texas">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li>Enchanted Rock</li>
+    </ul>
+
+
 </dl>
 <!--Javascript-->
-<script src="js/simple-calculator.js"></script>
+<script src="js/jquery_faq.js"></script>
 <!--Jquery-->
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <!--Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 <script>
+//Attributes and CSS exercise
 $(document).ready(function() {
   $('#toggle-info').click(function(event) {
-    event.preventDefault();
     $('.toggle').toggleClass('invisiblee');
   });
+});
+
+//Traversing exercise
+$(document).ready(function() {
+    $('#button-info').click(function(event) {
+        $('.button').toggleClass('invisiblee');
+    });
 });
 </script>
 </body>
