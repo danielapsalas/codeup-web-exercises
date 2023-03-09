@@ -25,6 +25,19 @@
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
+    $.get("data/inventory.json").done(function(data){
+        let buildHtml = ""; //Let me store all the HTML I need in here
+
+        data.forEach(function(tool){
+            buildHtml += "<tr> " +
+                "<td>" + tool.title + "</td>" +
+                "<td>" + tool.quantity.toString() + "</td>" +
+                "<td>" + tool.price.toString() + "</td>" +
+                "<td>" + tool.categories.toString() + "</td>" +
+                "</tr>";
+        })
+        $("#products").append(buildHtml)
+    })
 
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
