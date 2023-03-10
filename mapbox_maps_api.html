@@ -41,14 +41,18 @@
     );
 
     geocode("Av Lázaro Cárdenas 2424, Monterrey, Nuevo Leon, Mexico", myToken).then(function(results){
-        let myMarker3 = new mapboxgl.Marker();
-        myMarker3.setLngLat(results);
-        myMarker3.addTo(map);
+        // marker
+        let myMarker = new mapboxgl.Marker();
+        myMarker.setLngLat(results);
+        myMarker.addTo(map);
 
-        let myOptionsObj = {center: results, zoom: 12};
-
-        map.flyTo(myOptionsObj);
+        // popUp
+        let myPopup = new mapboxgl.Popup();
+        myPopup.setHTML("<span>CHEZ Cocina Tradicional</span>");
+        myMarker.setPopup(myPopup);
     })
+
+
 
 </script>
 </body>
