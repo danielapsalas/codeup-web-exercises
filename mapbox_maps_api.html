@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-
-    <!--Mapbox CDN below-->
+    <meta charset='utf-8' />
+    <title>Local search app</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 <div id="map"></div>
@@ -16,6 +27,15 @@
 <script>
     let myToken = "pk.eyJ1IjoiZGFuaWVsYXBzYWxhcyIsImEiOiJjbGYyeWMwdmQwYjNmM3lwZm45aGthazgzIn0.5C09BaZ5fe1N8IKJauaSog";
     mapboxgl.accessToken = myToken;
+
+    const map = new mapboxgl.Map(
+        {
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/outdoors-v12', // style URL
+            center: [-100.316116,25.686613], // starting position [lng, lat]
+            zoom: 8, // starting zoom (0 - 20)
+        }
+    );
 </script>
 </body>
 </html>
