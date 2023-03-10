@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Online Store</title>
 </head>
@@ -19,30 +19,67 @@
     <tbody id="insertProducts"></tbody>
 </table>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<button id="refresh-button" type="button">Refresh</button>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
 <script>
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-    $.get("data/inventory.json").done(function(data){
-        let buildHtml = ""; //Let me store all the HTML I need in here
+    $.get("data/inventory.json").done(function (data){
+        let html = "";
 
         data.forEach(function(tool){
-            buildHtml += "<tr> " +
-                "<td>" + tool.title + "</td>" +
-                "<td>" + tool.quantity.toString() + "</td>" +
-                "<td>" + tool.price.toString() + "</td>" +
-                "<td>" + tool.categories.toString() + "</td>" +
-                "</tr>";
+            html += "<tr id='table'>" +
+                "<td>" + tool.title + "</td>"
+                + "<td>" + tool.quantity + "</td>"
+                + "<td>" + tool.price + "</td>"
+                + "<td>" + tool.categories + "</td>"
+                + "</tr>";
         })
-        $("#products").append(buildHtml)
+        $("#products").append(html);
     })
 
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
+    $$("#refresh-button").click(function (){
+            $.get("data/inventory.json").done(function (data){
+                let html = "";
+
+                data.forEach(function(tool){
+                    html += "<tr id='table'>" +
+                        "<td>" + tool.title + "</td>"
+                        + "<td>" + tool.quantity + "</td>"
+                        + "<td>" + tool.price + "</td>"
+                        + "<td>" + tool.categories + "</td>"
+                        + "</tr>";
+                })
+                $("#insertProducts").html(html);
+            })
+        }
+    );
+    // $("#refresh-button").click(function() {
+    //     $("#insertProducts").on("data/inventory.json");
+    // })
+    // $("#refresh-button").click(function() {
+    //     $.get("data/inventory.json").done(function(data){
+    //         let buildHtml = "";
+    //
+    //         data.forEach(function(tool){
+    //             buildHtml += "<tr> " +
+    //                 "<td>" + tool.title + "</td>" +
+    //                 "<td>" + tool.quantity.toString() + "</td>" +
+    //                 "<td>" + tool.price.toString() + "</td>" +
+    //                 "<td>" + tool.categories.toString() + "</td>" +
+    //                 "</tr>";
+    //         })
+    //         $("#insertProducts").on(buildHtml)
+    //         console.log(data);
+    //     })
+    //     // $("#insertProducts").on("data/inventory.json");
+    // })
 })();
 </script>
 
