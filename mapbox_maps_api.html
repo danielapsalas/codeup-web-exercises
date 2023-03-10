@@ -56,7 +56,7 @@
 
                     // popUp
                     let myPopup = new mapboxgl.Popup();
-                    myPopup.setHTML(info.name);
+                    myPopup.setHTML('<h2>' + info.name + '</h2>' + '<span> Type of food: </span>' + info.type);
                     myMarker.setPopup(myPopup);
                 })
             })

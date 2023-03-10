@@ -1,14 +1,17 @@
 [
   {
     "name": "CHEZ Cocina Tradicional",
-    "location": "Av Lázaro Cárdenas 2424, Monterrey, Nuevo Leon., Mexico"
+    "location": "Av Lázaro Cárdenas 2424, Monterrey, Nuevo Leon., Mexico",
+    "type": "Regional Food"
   },
   {
     "name": "Fogo de Chão",
-    "location": "Av. Diego Rivera 1000, Residencial San Agustín 1er Sector, 66260 San Pedro Garza García, N.L., Mexico"
+    "location": "Av. Diego Rivera 1000, Residencial San Agustín 1er Sector, 66260 San Pedro Garza García, N.L., Mexico",
+    "type": "Brazilian Steakhouse"
   },
   {
     "name": "Sushi Iwa",
-    "location": "Av. Fundadores 955, Valle del Mirador, Monterrey, N.L., Mexico"
+    "location": "Av. Fundadores 955, Valle del Mirador, Monterrey, N.L., Mexico",
+    "type": "Sushi"
   }
 ]
