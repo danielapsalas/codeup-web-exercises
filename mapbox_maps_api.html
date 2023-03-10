@@ -10,16 +10,11 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
         #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
+            border: 3px solid pink;
+            margin: 5em 1em;
+            height: 40vh;
+            width: 90vw;
         }
     </style>
 </head>
@@ -45,6 +40,10 @@
         let myMarker = new mapboxgl.Marker();
         myMarker.setLngLat(results);
         myMarker.addTo(map);
+
+        //zoom
+        let myOptionsObj = {center: results, zoom: 12};
+        map.flyTo(myOptionsObj);
 
         // popUp
         let myPopup = new mapboxgl.Popup();
