@@ -36,6 +36,10 @@
             zoom: 8, // starting zoom (0 - 20)
         }
     );
+
+    const restaurantMarker = new mapboxgl.Marker() // initialize a new marker
+        .setLngLat([-100.33500,25.66105]) // Marker [lng, lat] coordinates
+        .addTo(map); // Add the marker to the map
 </script>
 </body>
 </html>
