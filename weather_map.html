@@ -34,25 +34,26 @@
     function geoCodeBuildWeather(searchString) {
         let html = "";
         geocode(searchString, mapBoxKey).then(function (results) {
-            // console.log(results[0]);
-            // console.log(results[1]);
 
             console.log(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`);
 
-            $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
-                html += `<div class="card" style="width: 18rem;">`
-                html += `<div class="card-header text-content-center">${data.list[0].dt_txt}</div>`
-                html += `<ul class="list-group list-group-flush">`
-                html += `<li class="list-group-item">${data.list[0].main.temp}<br>${data.list[0].weather[0].icon}</li>`
-                html += `<li class="list-group-item">Description: ${data.list[0].weather[0].description}</li>`
-                html += `<li class="list-group-item">Humidity: ${data.list[0].main.humidity}</li>`
-                html += `<li class="list-group-item">Wind: ${data.list[0].wind.speed}</li>`
-                html += `<li class="list-group-item">Pressure: ${data.list[0].main.pressure}</li>`
-                html += `</ul>`
-                html += `</div>`
-                $("#weatherBody").html(html);
-            })
-
+            for(var i = 0; i <= 39; i += 8) {
+                $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
+                    html += `<div class="card row" style="width: 18rem;">`
+                    html += `<div class="col">`
+                    html += `<div class="card-header text-content-center row">${data.list[0].dt_txt}</div>`
+                    html += `<ul class="list-group list-group-flush">`
+                    html += `<li class="list-group-item">${data.list[0].main.temp}<br>${data.list[0].weather[0].icon}</li>`
+                    html += `<li class="list-group-item">Description: ${data.list[0].weather[0].description}</li>`
+                    html += `<li class="list-group-item">Humidity: ${data.list[0].main.humidity}</li>`
+                    html += `<li class="list-group-item">Wind: ${data.list[0].wind.speed}</li>`
+                    html += `<li class="list-group-item">Pressure: ${data.list[0].main.pressure}</li>`
+                    html += `</ul>`
+                    html += `</div>`
+                    html += `</div>`
+                    $("#weatherBody").html(html);
+                })
+            }
         })
         html ="";
     }
