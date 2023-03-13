@@ -37,37 +37,20 @@
             // console.log(results[0]);
             // console.log(results[1]);
 
-            // console.log(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`);
+            console.log(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`);
 
             $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
-
-
-                html += `<h4>Description: ${data.list[0].weather[0].description}</h4>`;
-
-                // html += `<div class="card" style="width: 18rem;">
-                //       <div class="card-header">
-                //         Featured
-                //       </div>
-                //       <ul class="list-group list-group-flush">
-                //         <li class="list-group-item">An item</li>
-                //         <li class="list-group-item">A second item</li>
-                //         <li class="list-group-item">A third item</li>
-                //       </ul>
-                //     </div>`
-
-                // html += `<h4>Current weather: ${data.weather[0].description}</h4>`;
-                //
-                //
-                // html += `<h5>Current average wind speed: ${parseInt(data.wind.speed)} knots</h5>`;
-                //
-                // html += `<h5>Current Temperature: ${parseInt(data.main.temp)} &deg;</h5>`;
-                //
-                //
-                // html += `<h5>Current humidity: ${parseInt(data.main.humidity)}</h5>`;
-
+                html += `<div class="card" style="width: 18rem;">`
+                html += `<div class="card-header text-content-center">${data.list[0].dt_txt}</div>`
+                html += `<ul class="list-group list-group-flush">`
+                html += `<li class="list-group-item">${data.list[0].main.temp}<br>${data.list[0].weather[0].icon}</li>`
+                html += `<li class="list-group-item">Description: ${data.list[0].weather[0].description}</li>`
+                html += `<li class="list-group-item">Humidity: ${data.list[0].main.humidity}</li>`
+                html += `<li class="list-group-item">Wind: ${data.list[0].wind.speed}</li>`
+                html += `<li class="list-group-item">Pressure: ${data.list[0].main.pressure}</li>`
+                html += `</ul>`
+                html += `</div>`
                 $("#weatherBody").html(html);
-
-
             })
 
         })
