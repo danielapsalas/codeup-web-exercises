@@ -59,6 +59,14 @@
                     myMarker.setLngLat(results);
                     myMarker.addTo(map);
 
+                    // // zoom
+                    // let myOptionsObj = {
+                    //     center: results,
+                    //     zoom: 15
+                    // };
+                    // map.flyTo(myOptionsObj);
+
+                    // popUp
                     let myPopup = new mapboxgl.Popup();
                     myPopup.setHTML('<h2>' + info.name + '</h2>' + '<span> Type of food: </span>' + info.type);
                     myMarker.setPopup(myPopup);
