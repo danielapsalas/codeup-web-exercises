@@ -18,9 +18,8 @@
 
 <input type="text" placeholder="Search for weather" id="searchInput"> <button id="myBtn">Click here to search</button>
 
-<div id="weatherBody">
+    <div id="weatherBody"></div>
 
-</div>
 
 
 
@@ -37,26 +36,26 @@
 
             console.log(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`);
 
-            for(var i = 0; i <= 39; i += 8) {
                 $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
-                    html += `<div class="card row" style="width: 18rem;">`
-                    html += `<div class="col">`
-                    html += `<div class="card-header text-content-center row">${data.list[0].dt_txt}</div>`
-                    html += `<ul class="list-group list-group-flush">`
-                    html += `<li class="list-group-item">${data.list[0].main.temp}<br>${data.list[0].weather[0].icon}</li>`
-                    html += `<li class="list-group-item">Description: ${data.list[0].weather[0].description}</li>`
-                    html += `<li class="list-group-item">Humidity: ${data.list[0].main.humidity}</li>`
-                    html += `<li class="list-group-item">Wind: ${data.list[0].wind.speed}</li>`
-                    html += `<li class="list-group-item">Pressure: ${data.list[0].main.pressure}</li>`
-                    html += `</ul>`
-                    html += `</div>`
-                    html += `</div>`
+                    for(i = 0; i <=39; i +=8) {
+                        $.get(``)
+                        html += `<div>`
+                        html += `<h5>${data.list[i].dt_txt}</h5>`
+                        html += `<h6>${data.list[i].main.temp}</h6>`
+                        html += `<h6><img class="icons" src="http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png"</h6>`
+                        html += `<h6>Description: ${data.list[i].weather[0].description}</h6>`
+                        html += `<h6>Humidity: ${data.list[i].main.humidity}</h6>`
+                        html += `<h6>Wind: ${data.list[i].wind.speed}</h6>`
+                        html += `<h6>Pressure: ${data.list[i].main.pressure}</h6>`
+                        html += `</div>`
+                    }
                     $("#weatherBody").html(html);
                 })
-            }
-        })
-        html ="";
-    }
+            html ="";
+            })
+
+        }
+
 
     $("#myBtn").click(function(e){
         e.preventDefault();
