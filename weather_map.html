@@ -12,13 +12,23 @@
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
     <!--  Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        #map {
+            border: 3px solid pink;
+            margin: 5em 1em;
+            height: 40vh;
+            width: 90vw;
+        }
+
+    </style>
 </head>
 <body>
 <h2>~ weather ~</h2>
 
 <input type="text" placeholder="Search for weather" id="searchInput"> <button id="myBtn">Click here to search</button>
 
-    <div id="weatherBody"></div>
+<div id="weatherBody"></div>
+<div id="map"></div>
 
 
 
@@ -30,6 +40,28 @@
 <script src="js/keys.js"></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script>
+    mapboxgl.accessToken = mapBoxKey;
+
+    const map = new mapboxgl.Map(
+        {
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/outdoors-v12', // style URL
+            center: [-98.491142,29.424349], // starting position [lng, lat]
+            zoom: 10, // starting zoom (0 - 20)
+        }
+    );
+
+    const marker = new mapboxgl.Marker({
+        draggable: true
+    })
+        .setLngLat([-98.491142,29.424349])
+        .addTo(map);
+    //
+    // document.addEventListener("dragend", function(event) {
+    //     const lngLat = marker.getLngLat();
+    // });
+
+
     function geoCodeBuildWeather(searchString) {
         let html = "";
         geocode(searchString, mapBoxKey).then(function (results) {
@@ -50,10 +82,10 @@
                         html += `</div>`
                     }
                     $("#weatherBody").html(html);
-                })
-            html ="";
-            })
 
+                })
+                html ="";
+            })
         }
 
 
