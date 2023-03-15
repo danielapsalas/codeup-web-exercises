@@ -1,8 +1,11 @@
+*{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
 body{
     background-color: #919098;
     animation: fadeBackground 10s;
     animation-fill-mode: forwards;
-    font-family: 'Libre Franklin', sans-serif;
 }
 
 @keyframes fadeBackground {
@@ -28,12 +31,11 @@ body{
 
 .navbar{
     background-color: #BA8F95;
-
 }
 
 h5 {
     text-align: center;
-    font-size: semiBold;
+    font-weight: 600;
 }
 
 h6{
@@ -54,3 +56,12 @@ h6{
 .mapboxgl-marker path {
     fill: #CFBCDF;
 }
+
+span.navbar-brand.mb-0.h1, p{
+    font-weight: 700;
+}
+
+div#search{
+    font-weight: 600;
+}
+
