@@ -1,8 +1,8 @@
-*{
+* {
     font-family: 'Libre Franklin', sans-serif;
 }
 
-body{
+body {
     background-color: #919098;
     animation: fadeBackground 10s;
     animation-fill-mode: forwards;
@@ -23,13 +23,13 @@ body{
     justify-content: center;
 }
 
-#weatherBody{
+#weatherBody {
     display: flex;
     justify-content: center;
     padding-top: 3em;
 }
 
-.navbar{
+.navbar {
     background-color: #BA8F95;
 }
 
@@ -38,17 +38,17 @@ h5 {
     font-weight: 600;
 }
 
-h6{
+h6 {
     text-align: center;
     font-size: medium;
 }
 
-#search{
+#search {
     padding-top: 2em;
     padding-left: 2em;
 }
 
-.centered{
+.centered {
     display: flex;
     justify-content: center;
 }
@@ -57,11 +57,18 @@ h6{
     fill: #CFBCDF;
 }
 
-span.navbar-brand.mb-0.h1, p{
+span.navbar-brand.mb-0.h1 {
     font-weight: 700;
 }
 
-div#search{
+p {
+    font-weight: 700;
+}
+
+div#search {
     font-weight: 600;
 }
 
+.card{
+    background-color: #D0B3B7;
+}
