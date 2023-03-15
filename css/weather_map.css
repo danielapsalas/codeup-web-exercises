@@ -1,6 +1,7 @@
 body{
     background-color: #C6C5B9;
 }
+
 #map {
     border: 5px solid;
     border-color: #62929E;
@@ -28,4 +29,9 @@ h5{
 #search{
     padding-top: 2em;
     padding-left: 2em;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
 }

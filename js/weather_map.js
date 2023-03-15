@@ -22,9 +22,9 @@ marker.on('dragend', function(e){
     console.log(longlat);
     reverseGeocode({lat: longlat.lat, lng:longlat.lng}, mapBoxKey).then(function (results){
         $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
-            for(var i = 0; i <=39; i +=8) {
+            for( var i = 0; i <=39; i +=8) {
                 html += `<div class="card col-2 mx-2" style="width: 14rem;>`
-                html += `<h5 class="card-header text-aligned-center">${data.list[i].dt_txt}</h5>`
+                html += `<div class="centered"><h5 class="card-header text-aligned-center">${data.list[i].dt_txt}</h5>`
                 html += `<h6 class="card-text"> ${data.list[i].main.temp}</h6>`
                 html += `<h6><img class="icons" src="http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png"</h6>`
                 html += `<h6 class="card-text">Description: ${data.list[i].weather[0].description}</h6>`
@@ -37,9 +37,9 @@ marker.on('dragend', function(e){
             $("#weatherBody").html(html);
             html ="";
 
-            let city = "";
-            city += `<p class="d-flex justify-content-center">Current Location: ${data.city.name}</p>`
-            $("#current-city").html(city)
+            let place = "";
+            place += `<p>Current Location: ${data.city.name}</p>`
+            $("#current-city").html(place);
         })
     })
 });
@@ -60,7 +60,7 @@ function geoCodeBuildWeather(searchString) {
         $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
             for( var i = 0; i <=39; i +=8) {
                 html += `<div class="card col-2 mx-2" style="width: 14rem;>`
-                html += `<h5 class="card-header text-aligned-center">${data.list[i].dt_txt}</h5>`
+                html += `<div class="centered"><h5 class="card-header text-aligned-center">${data.list[i].dt_txt}</h5>`
                 html += `<h6 class="card-text"> ${data.list[i].main.temp}</h6>`
                 html += `<h6><img class="icons" src="http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png"</h6>`
                 html += `<h6 class="card-text">Description: ${data.list[i].weather[0].description}</h6>`
@@ -73,9 +73,9 @@ function geoCodeBuildWeather(searchString) {
             $("#weatherBody").html(html);
             html ="";
 
-            let city = "";
-            city += `<p>Current Location: ${data.city.name}</p>`
-            $("#current-city").html(city);
+            let place = "";
+            place += `<p>Current Location: ${data.city.name}</p>`
+            $("#current-city").html(place);
         })
     })
 }
