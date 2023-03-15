@@ -1,0 +1,31 @@
+body{
+    background-color: #C6C5B9;
+}
+#map {
+    border: 5px solid;
+    border-color: #62929E;
+    margin: 5em 1em;
+    height: 40vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+}
+
+#weatherBody{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+
+.navbar{
+    background-color: #546A7B;
+}
+
+h5{
+    text-align: center;
+}
+
+#search{
+    padding-top: 2em;
+    padding-left: 2em;
+}
