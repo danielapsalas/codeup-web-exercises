@@ -2,6 +2,7 @@ body{
     background-color: #919098;
     animation: fadeBackground 10s;
     animation-fill-mode: forwards;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 @keyframes fadeBackground {
@@ -27,10 +28,17 @@ body{
 
 .navbar{
     background-color: #BA8F95;
+
 }
 
-h5{
+h5 {
     text-align: center;
+    font-size: semiBold;
+}
+
+h6{
+    text-align: center;
+    font-size: medium;
 }
 
 #search{

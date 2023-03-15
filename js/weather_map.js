@@ -23,9 +23,9 @@ marker.on('dragend', function(e){
         $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${longlat.lat}&lon=${longlat.lng}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
             for( var i = 0; i <=39; i +=8) {
                 html += `<div class="card col-2 mx-2" style="width: 14rem;>`
-                html += `<div class="centered"><h5 class="card-header text-aligned-center">${data.list[i].dt_txt}</h5>`
-                html += `<h6 class="card-text"> ${data.list[i].main.temp}</h6>`
-                html += `<h6><img class="icons" src="http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png"</h6>`
+                html += `<h4 class="card-header">${data.list[i].dt_txt}</h4>`
+                html += `<h5 class="card-text"> ${data.list[i].main.temp}</h5>`
+                html += `<h5><img class="icons" src="http://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png"</h5>`
                 html += `<h6 class="card-text">Description: ${data.list[i].weather[0].description}</h6>`
                 html += `<h6 class="card-text">Humidity: ${data.list[i].main.humidity}</h6>`
                 html += `<h6 class="card-text">Wind: ${data.list[i].wind.speed}</h6>`
