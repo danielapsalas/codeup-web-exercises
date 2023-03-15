@@ -9,7 +9,7 @@ const map = new mapboxgl.Map(
     }
 );
 
-const marker = new mapboxgl.Marker({
+const marker = new mapboxgl.Marker ({
     draggable: true
 })
     .setLngLat([-98.491142,29.424349])
@@ -20,8 +20,7 @@ marker.on('dragend', function(e){
     let html = "";
     let longlat = e.target._lngLat;
     console.log(longlat);
-    reverseGeocode({lat: longlat.lat, lng:longlat.lng}, mapBoxKey).then(function (results){
-        $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${results[1]}&lon=${results[0]}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
+        $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${longlat.lat}&lon=${longlat.lng}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
             for( var i = 0; i <=39; i +=8) {
                 html += `<div class="card col-2 mx-2" style="width: 14rem;>`
                 html += `<div class="centered"><h5 class="card-header text-aligned-center">${data.list[i].dt_txt}</h5>`
@@ -41,7 +40,6 @@ marker.on('dragend', function(e){
             place += `<p>Current Location: ${data.city.name}</p>`
             $("#current-city").html(place);
         })
-    })
 });
 
 
@@ -79,7 +77,6 @@ function geoCodeBuildWeather(searchString) {
         })
     })
 }
-
 
 $("#myBtn").click(function(e){
     e.preventDefault();
