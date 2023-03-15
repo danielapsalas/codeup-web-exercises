@@ -3,13 +3,13 @@
 }
 
 body {
-    background-color: #919098;
+    background-color: #564E50;
     animation: fadeBackground 10s;
     animation-fill-mode: forwards;
 }
-
+/*#919098;*/
 @keyframes fadeBackground {
-    from { background-color: #919098; }
+    from { background-color: #564E50; }
     to { background-color: #897C80; }
 }
 
@@ -54,7 +54,7 @@ h6 {
 }
 
 .mapboxgl-marker path {
-    fill: #CFBCDF;
+    fill: #8B555C;
 }
 
 span.navbar-brand.mb-0.h1 {
