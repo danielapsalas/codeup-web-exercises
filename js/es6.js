@@ -73,7 +73,7 @@ users.forEach(function(user) {
   const {name, email, languages} = user;
 
   // TODO: rewrite the assignment below to use template strings
-  developers.push(`${name} \'s email is  ${email} ${naame} knows ${languages.join(', ')}`);
+  developers.push(`${name} \'s email is  ${email} ${name} knows ${languages.join(', ')}`);
 });
 
 // TODO: Use `let` for the following variable
@@ -84,5 +84,5 @@ for(let developer of developers) {
 
   // TODO: rewrite the assignment below to use template strings
   list += '<li> ${developer} </li>';
-});
+}
 list += '</ul>';
