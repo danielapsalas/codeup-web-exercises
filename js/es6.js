@@ -37,6 +37,10 @@ const name = 'dani';
 const email = 'danielapiconsalas@gmail.com';
 const languages = ['c++', 'c', 'javascript', 'java'];
 
+//cant change the variable because its a const
+// name = "dani";
+// email = "email";
+
 // TODO: rewrite the object literal using object property shorthand
 users.push({
   name: name,
