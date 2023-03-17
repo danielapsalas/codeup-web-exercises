@@ -80,6 +80,35 @@ console.log("longest email: " + longestEmail);
 // Example: Your instructors are: ryan, luis, zach, fernando, justin.
 let instructorString = users.reduce(function(stringAccum, user){
     return stringAccum + " , " + user.name;
-})
+}, "")
 
 console.log(instructorString);
+
+
+// Convert Address to Object
+// Write a function named convertAddressToObject that accepts a string that contains
+// a street number (as a string) and street name separated by a space characters, and
+// returns an object with properties streetNumber and streetName.
+//
+// Examples
+
+// convertAddressToObject('8626 Sunny Oaks') ➞ {streetNumber: '8646', streetName: 'Sunny Oaks'}
+// convertAddressToObject('5408 Villa Nueva') ➞ {streetNumber: '5408', streetName: 'Villa Nueva'}
+
+
+
+// Count total pets
+// Write a function named totalPets that accepts an array of objects where each object represents
+// a person, and has a 'pets' property for their owned pets. The function should return the sum of
+// every object's numPets property.
+const pets = ([
+    {name: 'Fernando Mendoza', pets: 1},
+    {name: 'Douglas Hirsh', pets: 8},
+    {name: 'Kenneth Howell', pets: 2}
+])
+
+let petNumber = pets.reduce(function(totalPet,number){
+    return totalPet + number.pets;
+}, 0)
+
+console.log("number of pets: " + petNumber);
