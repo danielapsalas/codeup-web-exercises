@@ -94,8 +94,21 @@ console.log(instructorString);
 
 // convertAddressToObject('8626 Sunny Oaks') ➞ {streetNumber: '8646', streetName: 'Sunny Oaks'}
 // convertAddressToObject('5408 Villa Nueva') ➞ {streetNumber: '5408', streetName: 'Villa Nueva'}
-
-
+// function convertAddressToObject(address){
+//     var addressName =  address.split(' ');
+//     console.log(addressName[0]);
+//     console.log(addressName[1]);
+//     console.log(addressName.length);
+//     return {fName: addressName[0], lName: address[1]};
+//     console.log(addressName[0]);
+//     console.log(addressName[1]);
+//
+// }
+adresses.forEach(function(adress) {
+    var addressName =  address.split(' ');
+    return {fName: addressName[0], lName: address[1]};
+});
+convertAddressToObject('8626 Sunny Oaks');
 
 // Count total pets
 // Write a function named totalPets that accepts an array of objects where each object represents
@@ -111,4 +124,4 @@ let petNumber = pets.reduce(function(totalPet,number){
     return totalPet + number.pets;
 }, 0)
 
-console.log("number of pets: " + petNumber);
+console.log("Bonus - number of pets: " + petNumber);
