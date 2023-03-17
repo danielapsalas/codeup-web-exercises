@@ -19,9 +19,9 @@ const marker = new mapboxgl.Marker ({
 marker.on('dragend', function(e){
     let html = "";
     let longlat = e.target._lngLat;
-
+        console.log($.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${longlat.lat}&lon=${longlat.lng}&appid=${openWeatherKey}&units=imperial`));
         $.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${longlat.lat}&lon=${longlat.lng}&appid=${openWeatherKey}&units=imperial`).done(function (data) {
-            for( var i = 0; i <=39; i +=8) {
+            for( var i = 0; i <= 39; i += 8) {
                 html += `<div class="card col-2 mx-2" style="width: 14rem;>`
                 html += `<div class="centered"><h5 class="card-header text-aligned-center">${data.list[i].dt_txt}</h5>`
                 html += `<h6 class="card-text"> ${data.list[i].main.temp}&#8457</h6>`

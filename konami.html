@@ -36,7 +36,7 @@
   let userInput = "";
 
   $('.clickhere').click(function(e) {
-    $(document).keyup(function(e){
+    $(document).keypress(function(e){
       userInput += e.keyCode;
       console.log(userInput);
       if(konamiCode === userInput){
